@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Non Real Estate-Education </h1>
+              <span>We are over 20 years of experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        {% for edu in education  %}
+        <div class="container non_real_tabs_2">
+        {% if edu.image %}
+        <img class="non_real_tab2_img" src="{{edu.image.url}}"  alt="">
+        {% else %}
+        <img class="non_real_tab2_img" src="{% static './images/random/single_service_02.jpg' %}"  alt="">
+        {% endif %}
+
+        <h4>{{edu.title}}</h4>
+        <p>{{edu.descption}}</p>
+        <p>{{edu.date}}</p>
+        </div> 
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

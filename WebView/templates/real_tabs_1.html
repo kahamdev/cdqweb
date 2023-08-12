@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Real Estate-Plots</h1>
+              <span>We are over 20 years of experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            {% for plt in plot  %}
+         
+            <div class="container real_tabs_1">
+                 
+            {% if plt.image %}
+            <img class="real_tab1_img" src="{{plt.image.url}}"  alt="">
+            {% else %}
+            <img class="real_tab1_img" src="{% static './images/random/single_service_01.jpg' %}"  alt="">
+            {% endif %}
+    
+            <h4>{{plt.title}}</h4>
+            <p>{{plt.descption}}</p>
+            <p>{{plt.date}}</p>
+            </div> 
+            {% endfor %}
+          </div>
+          </div> 
+      </div>
+  
+{% endblock %}

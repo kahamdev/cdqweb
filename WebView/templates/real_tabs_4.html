@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Real Estate-Agriculture</h1>
+              <span>We are over 20 years of experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        {% for agr in agriculture  %}
+        <div class="container real_tabs_4">
+        {% if agr.image %}
+        <img class="real_tab4_img" src="{{agr.image.url}}"  alt="">
+        {% else %}
+        <img class="real_tab4_img" src="{% static './images/random/single_service_04.jpg' %}"  alt="">
+        {% endif %}
+
+        <h4>{{agr.title}}</h4>
+        <p>{{agr.descption}}</p>
+        <p>{{agr.date}}</p>
+        </div> 
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

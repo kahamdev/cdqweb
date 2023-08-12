@@ -1,0 +1,75 @@
+{% load static %}
+<!-- Footer Starts Here -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-item">
+          <h4>CDQLink investment Company</h4>
+          <div class="row">
+            <div class="col-sm-10">
+              <a href="{% url 'home' %}" class="ratio img-responsive img-circle"
+                style="background-image: url('{% static './images/logo/official_2.png' %}');"></a>
+            </div>
+          <!-- company logo -->
+          <div class="container">
+          
+         
+
+            </div>
+          </div>
+
+          <!-- end of company logo -->
+          <p>For bright future and better.</p>
+          <ul class="social-icons">
+            <li><a rel="nofollow" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Services links for</h4>
+          <ul class="menu-list">
+            <li><a href="{% url 'real_tabs_1' %}">PLot Package</a></li>
+            <li><a href="{% url 'real_tabs_2' %}">Farm Package</a></li>
+            <li><a href="{% url 'real_tabs_3' %}">Construction Package</a></li>
+            <li><a href="{% url 'real_tabs_4' %}">Agriculture Package</a></li>
+            <li><a href="{% url 'non_real_tabs_1' %}">IT Consultancy</a></li>
+            <li><a href="{% url 'non_real_tabs_2' %}">Undergraduate Package</a></li>
+            <li><a href="{% url 'non_real_tabs_3' %}">Microcredit Package</a></li>
+            <li><a href="{% url 'non_real_tabs_4' %}">Education Programme</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Navigation Pages</h4>
+          <ul class="menu-list">
+            <li><a href="{% url 'real_estate' %}">Real Estate</a></li>
+            <li><a href="{% url 'non_real_estate' %}">Non Real Estate</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'events' %}">Events</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item last-item">
+          <h4>Video Descrption.</h4>
+          <div class="video-footer">
+            <video width="400" height="400"controls autoplay muted>
+              <source src="{% static 'videos/video1.mp4'%}" type="video/mp4">
+           </video>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2022 CDQLink investment Co., Ltd.
+          
+          - Design: <a rel="nofollow noopener" href="{% url 'home' %}" target="_blank">CDQLink investment Company</a></p>
+        </div>
+      </div>
+    </div>
+  </div>

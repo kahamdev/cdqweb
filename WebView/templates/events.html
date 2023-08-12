@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}events{% endblock title %}
+
+{% block content %}
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Events</h1>
+            <span>We are over 20 years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    {% comment %} {% for ev in event %}
+    <div class="event-lists">
+      <div class="event-lists-items">
+           {% if ev.image %}
+                <img class="event-lists-items-img" src="{{ev.image.url}}" alt="office image">
+           {% else %}
+           <img class="event-lists-items-img" src="{% static './images/random/cdqimage02OG.png' %}" alt="office image">
+          {% endif %}
+        </div>
+      <div class="event-lists-items">
+          <h2>{{ev.title}}</h2>
+          <p>{{ev.descption}}</p>
+          <small>{{ev.date}}</small>
+      </div> 
+   </div>
+   {% endfor %} {% endcomment %}
+
+   <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+    {% for ev in event %}
+    <div class="container non_real_tabs_2">
+    {% if ev.image %}
+    <img class="event-lists-items-img" src="{{ev.image.url}}"  alt="">
+    {% else %}
+    <img class="event-lists-items-img" src="{% static './images/random/cdqimage02OG.png' %}"  alt="">
+    {% endif %}
+    <div class="mt-5">
+    <h4>{{ev.title}}</h4>
+    <p>{{ev.descption}}</p>
+    <p>{{ev.date}}</p>
+    </div>
+    </div> 
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+
+  
+
+    <div class="partners">
+ 
+
+  {% endblock content %}

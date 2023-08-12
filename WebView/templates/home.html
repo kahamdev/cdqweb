@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}home{% endblock title %}
+
+<link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+
+  <!-- Banner Starts Here -->
+  {% block content %}
+  <div class="main-banner header-text" id="top">
+    <div class="Modern-Slider">
+      <!-- Item -->
+      <div class="item item-1">
+       
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Construction Package</h4>
+            <p>This is package consists of two things 
+              First: Construction of New buildings
+              Second: Repairing old buildings/corrugated buildings. 
+              For a client who needs new buildings or houses built and has nothing the company will be responsible for doing following things for clients.
+              </p>
+              <a href="{% url 'real_tabs_3' %}" class="filled-button">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item item-2">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Farm Package</h4>
+            <p> Our fields are located at different areas where the customer is able to rent or buy through cash on hand and credit formular, these fields are 
+              available in different sizes from 1acre to 3/4 acre..</p>
+              <a href="{% url 'real_tabs_2' %}" class="filled-button">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item item-3">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Plot Package</h4>
+            <p>Our plots are located in different Region in Tanzania such as Dar Es Salaam, Dodoma and Arusha. </p>
+              <a href="{% url 'real_tabs_1' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+
+       <!-- Item -->
+       <div class="item item-4">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Microcredit Package</h4>
+            <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae
+              dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+              <a href="{% url 'non_real_tabs_3' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+       <!-- Item -->
+       <div class="item item-5">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Agriculture Package</h4>
+              <p>This package comprises of agriculture projects that carried out either in groups or individuals 
+              in both CROP CULTIVATION and LIVESTOCK KEEPING.</p>
+              <a href="{% url 'real_tabs_4' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+
+       <!-- Item -->
+       <div class="item item-6">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>IT Consultancy</h4>
+            <p>This Part involve Postpaid IT service which providing various IT services to organization in the stated modes include. Another Part involve
+              Loans for software system, Web hosting package,
+              Training and consultancy
+            websites
+            </p>
+              <a href="{% url 'non_real_tabs_1' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+
+       <!-- Item -->
+       <div class="item item-7">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Undergraduate Package</h4>
+            <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae
+              dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+              <a href="{% url 'non_real_tabs_2' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+
+       <!-- Item -->
+       <div class="item item-8">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we deals with the following services</h6>
+            <h4>Education Programme</h4>
+            <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae
+              dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+              <a href="{% url 'non_real_tabs_4' %}" class="filled-button">Read More</a>
+            </div>
+        </div>
+      </div>
+      <!-- // Item -->
+    </div>
+  </div>
+  <!-- Banner Ends Here -->
+  <div class="request-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Request a call back right now ?</h4>
+          <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
+        </div>
+        <div class="col-md-4">
+          <a href="{% url 'contact' %}" class="border-button">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="container">
+      <!-- row1 -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Our <em>Services</em></h2>
+            <span>CDQLINKS ALWAYS PROVIDES USEFUL AND BENEFICARY SERVICES.</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-item">
+            <img src="{% static 'images/random/photo1.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Real Estate</h4>
+              <p> 
+              <ol type="1">
+                  <li>Plot</li>
+                  <li>Farm</li>
+                  <li>Construction Package</li>
+                  <li>Agriculture Package</li>
+                
+              </ol>
+              <a href="{% url 'real_estate' %}" class="filled-button">Read More</a>
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-item">
+            <img src="{% static 'images/random/photo1.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Non Real Estate</h4>
+              <p> 
+                <ol type="1">
+                    <li>IT Consultancy</li>
+                    <li>Undergraduate Package</li>
+                    <li>Micro-credit Package</li>
+                    <li>Education Programme</li>
+                </ol>
+                <a href="{% url 'non_real_estate' %}" class="filled-button">Read More</a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</div>
+
+  <div class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>What they say <em>about us</em></h2>
+            <span>testimonials from our greatest clients</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="owl-testimonials owl-carousel">
+
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <img src="{% static 'images/random/photo1.jpg' %}" width="60" height="60" alt="">
+                <h4>Deus Kileny</h4>
+                <span>Project Manager</span>
+                <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo
+                  sem sit amet quam. Pellentesque in sagittis lacus."</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <img src="{% static 'images/random/photo2.jpg' %}" width="60" height="60" alt="">
+                <h4>Chury Boy</h4>
+                <span>Expert Developer</span>
+                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan,
+                  arcu id ornare malesuada, est nulla luctus nisi."</p>
+              </div>
+             
+            </div>
+
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <h4>Deus Kileny</h4>
+                <span>Project Manager</span>
+                <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae
+                  egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+              </div>
+              <img src="http://placehold.it/60x60" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% comment %} 
+  <div class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-partners owl-carousel">
+
+            <div class="partner-item">
+              <img src="{% static 'images/random/client-01.png' %}" title="1" alt="1">
+            </div>
+
+            <div class="partner-item">
+              <img src="{% static 'images/random/client-01.png' %}" title="2" alt="2">
+            </div>
+
+            <div class="partner-item">
+              <img src="{% static 'images/random/client-01.png' %}" title="3" alt="3">
+            </div>
+
+            <div class="partner-item">
+              <img src="{% static 'images/random/client-01.png' %}" title="4" alt="4">
+            </div>
+
+            <div class="partner-item">
+              <img src="{% static 'images/random/client-01.png' %}" title="5" alt="5">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+{% endblock content %}
+  

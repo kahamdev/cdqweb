@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}non_real_estate{% endblock title %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Non Real Estate</h1>
+            <span>You are welcome to our non real estate services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="non_real_all_tabs">
+      <div class="container">
+            <div class="non_real_all_tabs_list">
+              <ul>
+                <li><a href="{% url 'non_real_tabs_1' %}">IT CONSULTANCY <i class="fa fa-plus"></i></a></li>
+                <li><a href="{% url 'non_real_tabs_2' %}">UNDERGRADUATE PACKAGE <i class="fa fa-plus"></i></a></li>
+                <li><a href="{% url 'non_real_tabs_3' %}">MICRO-CREDIT PACKAGE <i class="fa fa-plus"></i></a></li>
+                <li><a href="{% url 'non_real_tabs_4' %}">EDUCATION PROGRAMME <i class="fa fa-plus"></i></a></li> 
+              </ul>
+            </div> 
+      </div>
+      </div
+
+  {% endblock content %}
+
+
+

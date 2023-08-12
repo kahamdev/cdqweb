@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Real Estate-Constructions</h1>
+              <span>We are over 20 years of experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        {% for constr in construction  %}
+        <div class="container real_tabs_3">
+        {% if constr.image %}
+        <img class="real_tab3_img" src="{{constr.image.url}}"  alt="">
+        {% else %}
+        <img class="real_tab3_img" src="{% static './images/random/single_service_03.jpg' %}"  alt="">
+        {% endif %}
+
+        <h4>{{constr.title}}</h4>
+        <p>{{constr.descption}}</p>
+        <p>{{constr.date}}</p>
+        </div> 
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

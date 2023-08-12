@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+<title>broker_post</title>
+
+{% block content %}
+
+<div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>BROKERS POST</h1>
+          <span>Brokers Post show the displayed information.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container mt-3">
+        
+            <div class="row">
+                 {% for b in broker %}
+                 <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+                      <div class="card h-100 p-4">
+                           <h4>{{b.username}}</h4>
+                           <p>{{b.message}}</p>
+                      </div>
+                 </div>
+                 {% endfor %}
+            </div>
+     </div> 
+    
+
+    
+
+{% endblock content %}

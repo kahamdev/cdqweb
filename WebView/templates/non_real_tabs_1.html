@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-heading header-text">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <h1>Non Real Estate-Consultancy </h1>
+         <span>We are over 20 years of experience</span>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+     {% for consult in consultant  %}
+        <div class="container non_real_tabs_1">
+        {% if consult.image %}
+           <img class="non_real_tab1_img" src="{{consult.image.url}}"  alt="">
+        {% else %}
+           <img class="non_real_tab1_img" src="{% static './images/random/single_service_01.jpg' %}"  alt="">
+        {% endif %}
+        
+        <h4>{{consult.title}}</h4>
+        <p>{{consult.descption}}</p>
+        <p>{{consult.date}}</p>
+        </div> 
+    {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
